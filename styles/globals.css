@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-inter text-6xl lg:text-7xl xl:text-8xl font-semibold; /* 6rem */
+  }
+  h2 {
+    @apply font-inter text-4xl lg:text-5xl  xl:text-6xl font-semibold; /* 4rem */
+  }
+  h2.about {
+    @apply font-inter text-[4rem]; /* 4rem */
+  }
+  h3.about-section {
+    @apply font-inter text-2xl leading-10; /*2.375rem]*/
+  }
+  h3 {
+    @apply font-inter text-2xl font-semibold; /* 1.5rem */
+  }
+  h4 {
+    @apply font-inter text-xl font-semibold; /* 1.25rem */
+  }
+  p {
+    @apply font-inter text-base font-normal leading-relaxed; /* 1rem */
+  }
+
+  /* SECTIONS */
+  .full_wrapper {
+    @apply h-[auto] w-full overflow-clip;
+  }
+  header {
+    @apply w-full !max-w-[100%];
+  }
+}
+@layer components {
+}
+@layer utilities {
+  .responsive_container {
+    @apply max-w-[90vw] xl:max-w-[85vw] 3xl:max-w-[80vw]  4xl:max-w-[75vw];
+  }
+  .responsive_container_large {
+    @apply max-w-[90vw] xl:max-w-[88.33vw] 3xl:max-w-[85.33vw]  4xl:max-w-[90.33vw];
+  }
+}
