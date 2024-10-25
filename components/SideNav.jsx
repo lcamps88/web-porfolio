@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import {
   AiOutlineMenu,
   AiOutlineHome,
@@ -16,10 +16,10 @@ const SideNav = () => {
     console.log('state change', nav)
   }
   return (
-    <div>
+    <div id='main'>
       <AiOutlineMenu
         onClick={handleNav}
-        className='absolute top-4 right-4 z-[99] md:hidden'
+        className='absolute bg-white top-5 p-1 w-8 h-8 rounded-[50%] right-4 z-[99] md:hidden'
       />
       {nav ? (
         <div className='fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20'>
@@ -60,7 +60,7 @@ const SideNav = () => {
           </a>
         </div>
       ) : (
-       ''
+        ''
       )}
       <div className='md:block hidden fixed top-[25%] z-10'>
         <div className='flex flex-col pl-10'>

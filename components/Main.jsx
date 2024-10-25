@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import bgImage from '@/public/image/bg-portfolio.webp'
+import bgImage from '@/public/images/bg-portfolio.webp'
 
 import { TypeAnimation } from 'react-type-animation'
 import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs'
@@ -13,7 +13,7 @@ const Main = () => {
         className='w-full h-screen object-cover object-left scale-x-[-1]'
         src={bgImage}
       />
-      <div className='w-full h-screen absolute top-0 left-0 bg-black/60'>
+      <div className='w-full h-screen absolute top-0 left-0 bg-black/50'>
         <div className='content-center flex-wrap gap-y-5 m-auto h-full w-full flex flex-col justify-center lg:items-start responsive_container text-white'>
           <h2>I&apos;m Lisandra Camps</h2>
           <h3>

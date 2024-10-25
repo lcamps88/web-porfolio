@@ -1,6 +1,8 @@
 import Main from '@/components/Main'
 import SideNav from '@/components/SideNav'
-import Image from 'next/image'
+import About from '@/components/About'
+import Skills from '@/components/Skills'
+import Work from '@/components/Work'
 
 export const metadata = {
   title: 'Portfolioe',
@@ -10,8 +12,11 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <SideNav />
+      <SideNav/>
       <Main />
+      <About/>
+      <Skills/>
+      <Work/>
     </>
   )
 }

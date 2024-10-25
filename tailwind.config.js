@@ -15,8 +15,18 @@ module.exports = {
       colors: {
         white: '#FFFFFF',
         black: '#000000',
+        red_card: '#FF6F61',
+        blue_card: '#92A8D1',
+        green_card: '#88B04B',
+        pink_card: '#F7CAC9',
       },
-      backgroundImage: {},
+      backgroundImage: {
+        about: "url('/images/about_us.webp')",
+        custom_gradient:
+          'linear-gradient(to bottom, #000000, #302a2a 35%, #4d3d3b 60%, #766246 80%)',
+        custom_gradient_up:
+          'linear-gradient(to bottom, #766246, #4d3d3b 35%, #302a2a 60%, #000000 80%)',
+      },
       screens: {
         xsm: '414px',
         sm: '640px',
