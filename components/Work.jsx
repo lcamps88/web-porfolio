@@ -11,10 +11,10 @@ const Work = () => {
   return (
     <section
       id='projects'
-      className='w-full flex flex-wrap bg-black gap-y-14 xl:gap-y-20 pt-16 pb-16 2xl:pb-28'
+      className='w-full flex flex-wrap bg-black gap-y-14 xl:gap-y-20 pt-10 pb-16 2xl:pb-20'
     >
       <Container customStyle='w-full flex flex-wrap justify-between responsive_container gap-y-10'>
-        <div className='w-full flex text-white gap-y-10 flex-col'>
+        <div className='w-full flex text-white xl:gap-y-5 flex-col'>
           <h2>Projects</h2>
           <div className='w-full py-10 flex'>
             <div className='w-full h-full rounded-lg grid md:grid-cols-2 lg:grid-cols-3 bg-transparent justify-center gap-10'>

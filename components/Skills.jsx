@@ -28,7 +28,7 @@ const Skills = () => {
     <>
       <section
         id='work'
-        className='w-full flex flex-wrap bg-custom_gradient_up gap-y-14 xl:gap-y-20 pt-16 pb-16 2xl:pb-28'
+        className='w-full flex flex-wrap bg-custom_gradient_up gap-y-14 xl:gap-y-20 pt-5 pb-10 2xl:pb-20'
       >
         <Container customStyle='w-full flex flex-wrap justify-between responsive_container gap-y-10 text-white'>
           <h2 className='w-full flex'>Technical Skills</h2>
