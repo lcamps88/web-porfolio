@@ -35,7 +35,7 @@ const Skills = () => {
           <div className='w-full grid md:grid-cols-2 xl:grid-cols-4 gap-10'>
             <div className='w-full flex flex-col gap-y-5 p-5 border-red_card border-3 rounded-lg hover:bg-red_card hover:transition-all'>
               <h3>
-                CMS <br /> Platforms
+                CMS Platforms
               </h3>
               <ul className='list-none w-full flex flex-col gap-y-5 p-5 bg-white text-black rounded-lg h-full'>
                 <li className='flex flex-row gap-x-3 items-center'>

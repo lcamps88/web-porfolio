@@ -40,12 +40,12 @@ const Main = () => {
               }}
             />
           </h3>
-          <div className='flex justify-between pt-6 max-w-[200px] w-full'>
+          {/* <div className='flex justify-between pt-6 max-w-[200px] w-full'>
             <BsFacebook size={20} className='cursor-pointer text-white' />
             <BsTwitter size={20} className='cursor-pointer text-white' />
             <BsInstagram size={20} className='cursor-pointer text-white' />
             <BsLinkedin size={20}className='cursor-pointer text-white'  />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

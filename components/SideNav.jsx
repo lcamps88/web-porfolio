@@ -8,12 +8,16 @@ import {
 } from 'react-icons/ai'
 import { GrProjects } from 'react-icons/gr'
 import { BsPerson } from 'react-icons/bs'
+import Link from 'next/link'
 
 const SideNav = () => {
   const [nav, setNav] = useState(false)
   const handleNav = () => {
     setNav(!nav)
     console.log('state change', nav)
+  }
+  const toggleNav = () => {
+    setNav(!nav)
   }
   return (
     <div id='main'>
@@ -23,85 +27,92 @@ const SideNav = () => {
       />
       {nav ? (
         <div className='fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20'>
-          <a
+          <Link
             href='#main'
+            onClick={toggleNav}
             className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'
           >
             <AiOutlineHome size={20} />
             <span className='pl-4'>Home</span>
-          </a>
-          <a
-            href='#main'
-            className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'
-          >
-            <GrProjects size={20} />
-            <span className='pl-4'>Work</span>
-          </a>
-          <a
-            href='#main'
-            className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'
-          >
-            <AiOutlineProject size={20} />
-            <span className='pl-4'>Projects</span>
-          </a>
-          <a
-            href='#main'
+          </Link>
+          <Link
+            href='#profile'
+            onClick={toggleNav}
             className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'
           >
             <BsPerson size={20} />
             <span className='pl-4'>Resume</span>
-          </a>
-          <a
-            href='#main'
+          </Link>
+          <Link
+            href='#work'
+            onClick={toggleNav}
+            className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'
+          >
+            <GrProjects size={20} />
+            <span className='pl-4'>Work</span>
+          </Link>
+          <Link
+            href='#projects'
+            onClick={toggleNav}
+            className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'
+          >
+            <AiOutlineProject size={20} />
+            <span className='pl-4'>Projects</span>
+          </Link>
+
+          <Link
+            href='#contact'
+            onClick={toggleNav}
             className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'
           >
             <AiOutlineMail size={20} />
             <span className='pl-4'>Contact</span>
-          </a>
+          </Link>
         </div>
       ) : (
         ''
       )}
       <div className='md:block hidden fixed top-[25%] z-10'>
         <div className='flex flex-col pl-10'>
-          <a
+          <Link
             href='#main'
             className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'
           >
             <AiOutlineHome size={20} />
-          </a>
+          </Link>
         </div>
         <div className='flex flex-col pl-10'>
-          <a
-            href='#work'
-            className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'
-          >
-            <GrProjects size={20} />
-          </a>
-        </div>
-        <div className='flex flex-col pl-10'>
-          <a
-            href='#projects'
-            className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'
-          >
-            <AiOutlineProject size={20} />
-          </a>
-        </div>
-        <div className='flex flex-col pl-10'>
-          <a
+          <Link
             href='#profile'
             className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'
           >
             <BsPerson size={20} />
-          </a>
+          </Link>
         </div>
         <div className='flex flex-col pl-10'>
-          <a
+          <Link
+            href='#work'
+            className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'
+          >
+            <GrProjects size={20} />
+          </Link>
+        </div>
+        <div className='flex flex-col pl-10'>
+          <Link
+            href='#projects'
+            className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'
+          >
+            <AiOutlineProject size={20} />
+          </Link>
+        </div>
+
+        <div className='flex flex-col pl-10'>
+          <Link
             href='#contact'
             className='rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'
           >
             <AiOutlineMail size={20} />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
