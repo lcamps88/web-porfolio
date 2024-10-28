@@ -26,11 +26,11 @@ const SideNav = () => {
         className='absolute bg-white top-5 p-1 w-8 h-8 rounded-[50%] right-4 z-[99] md:hidden'
       />
       {nav ? (
-        <div className='fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20'>
+        <div className='fixed w-full h-screen bg-black/80 flex flex-col justify-center items-center z-20'>
           <Link
             href='#main'
             onClick={toggleNav}
-            className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'
+            className='w-[50%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-600 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'
           >
             <AiOutlineHome size={20} />
             <span className='pl-4'>Home</span>
@@ -38,7 +38,7 @@ const SideNav = () => {
           <Link
             href='#profile'
             onClick={toggleNav}
-            className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'
+            className='w-[50%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-600 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'
           >
             <BsPerson size={20} />
             <span className='pl-4'>Resume</span>
@@ -46,7 +46,7 @@ const SideNav = () => {
           <Link
             href='#work'
             onClick={toggleNav}
-            className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'
+            className='w-[50%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-600 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'
           >
             <GrProjects size={20} />
             <span className='pl-4'>Work</span>
@@ -54,7 +54,7 @@ const SideNav = () => {
           <Link
             href='#projects'
             onClick={toggleNav}
-            className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'
+            className='w-[50%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-600 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'
           >
             <AiOutlineProject size={20} />
             <span className='pl-4'>Projects</span>
@@ -63,7 +63,7 @@ const SideNav = () => {
           <Link
             href='#contact'
             onClick={toggleNav}
-            className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'
+            className='w-[50%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-600 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200'
           >
             <AiOutlineMail size={20} />
             <span className='pl-4'>Contact</span>
