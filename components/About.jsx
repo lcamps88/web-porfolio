@@ -10,13 +10,10 @@ const About = () => {
         <div className='w-full flex lg:section-width-45 flex-col gap-y-5 justify-center text-white'>
           <h2>Professional Summary</h2>
           <p>
-            Experienced WordPress Developer with over three years of expertise
-            in designing, developing, and maintaining custom websites. Skilled
-            in creating efficient and optimized web solutions using WordPress,
-            WooCommerce, and other CMS platforms. Proficient in theme and plugin
-            customization, SEO optimization, and eCommerce integration. Seeking
-            to leverage technical skills and experience to contribute to a
-            dynamic organization and grow within the web development field.
+          With over 10 years of experience in web development, I specialize in creating advanced web solutions centered around WordPress, enhanced by modern technologies like JavaScript, React, and Tailwind CSS. My expertise includes developing and customizing WordPress themes and plugins, integrating robust and optimized functionalities that boost performance and user experience.
+          </p>
+          <p>
+          With a focus on efficiency and scalability, I leverage React to enhance interactivity and Tailwind CSS to ensure a clean, responsive design in every project. My commitment is to deliver websites that not only look great but are also fast, SEO-optimized, and easily scalable. I am dedicated to contributing my technical expertise to organizations seeking innovation and growth in the web development field.
           </p>
         </div>
       </Container>
