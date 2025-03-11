@@ -6,6 +6,7 @@ import Project3 from '@/public/images/realestate4all.webp'
 import Project4 from '@/public/images/schmutzes.webp'
 import Project5 from '@/public/images/pink-zebra-store-locator.vercel.app.webp'
 import Project6 from '@/public/images/sann-kalla.webp'
+import Project7 from '@/public/images/ce-restaurants1.png'
 
 const Work = () => {
   return (
@@ -39,13 +40,19 @@ const Work = () => {
                 category='NextJs'
                 color='border-pink_card'
               />
-
               <ProjectsCard
                 title='Schmutzes'
                 image={Project4}
                 link='https://schmutzes.com/'
                 category='Shopify'
                 color='border-red_card'
+              />
+                <ProjectsCard
+                title='CE Restaurants Concepts'
+                image={Project7}
+                link='https://www.cerestaurants.com/'
+                category='Shopify / NextJs'
+                color='border-blue_card'
               />
               <ProjectsCard
                 title='NocostShoes'
@@ -61,6 +68,7 @@ const Work = () => {
                 category='Mapbox'
                 color='border-blue_card'
               />
+              
             </div>
           </div>
         </div>
