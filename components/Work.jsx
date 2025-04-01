@@ -30,14 +30,14 @@ const Work = () => {
                 title='Sann Kalla'
                 image={Project6}
                 link='https://sann-kalla.com/'
-                category='WooCommerce'
+                category='WordPress/WooCommerce'
                 color='border-blue_card'
               />
               <ProjectsCard
                 title='Real Estate 4 All'
                 image={Project3}
                 link='https://realestate4all.com/'
-                category='NextJs'
+                category='WordPress/Real State'
                 color='border-pink_card'
               />
               <ProjectsCard
