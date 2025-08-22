@@ -42,13 +42,13 @@ const Work = () => {
                 category='WordPress/Real State'
                 color='border-pink_card'
               />
-              {/* <ProjectsCard
+              <ProjectsCard
                 title='Atlantic Signal'
                 image={Project9}
                 link='https://atlanticsignal.com/'
                 category='WordPress/Elementor'
                 color='border-pink_card'
-              /> */}
+              />
               <ProjectsCard
                 title='Schmutzes'
                 image={Project4}
@@ -56,14 +56,14 @@ const Work = () => {
                 category='Shopify'
                 color='border-red_card'
               />
-               {/* <ProjectsCard
+               <ProjectsCard
                 title='SoRite'
                 image={Project8}
                 link='https://sorite.com/'
                 category='Custom Liquid Theme / Shopify'
                 color='border-red_card'
-              /> */}
-                <ProjectsCard
+              />
+              <ProjectsCard
                 title='CE Restaurants Concepts'
                 image={Project7}
                 link='https://www.cerestaurants.com/'
@@ -77,13 +77,13 @@ const Work = () => {
                 category='WebFlow'
                 color='border-green_card'
               />
-              {/* <ProjectsCard
+              <ProjectsCard
                 title='Dark Saber Labs'
                 image={Project5}
                 link='https://darksaberlabs.com/'
                 category='Nextjs /Custom Development'
                 color='border-blue_card'
-              /> */}
+              />
               
             </div>
           </div>
